@@ -63,8 +63,8 @@ h1 {
  h2 {
     font-size: 180%;
     word-spacing: 2px;
-    /* text-align: center; */
-    margin-bottom: 30px;
+    text-align: center;
+    margin: 1em 2em;
     letter-spacing: 1px;
 }
 
@@ -87,32 +87,37 @@ h2:after {
 /*  Site header */
 .site-header {
     display: flex;
-    flex-flow: column;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(img/hero.jpg);
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* align-items: stretch; */
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../img/hero.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
+    width: 100%;
     background-attachment: fixed;
  }
 
 .main-nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-left: 2em;
+    align-items: flex-start;
+    flex-basis: 30%;
+    padding: 0 2em;
     margin-bottom: 3em;
     /* border: 1px solid red; */
 }
 
 .main-nav .brand-logo{
-    flex : 0 0 45%;
+    flex : 1 1 40%;
     margin: 0.8em ;
-
-    /* border: 1px solid orange; */
 }
 
 .main-nav .logo{
-    height: 100px;
+    height: 5em;
     width: auto;
 }
 
@@ -120,8 +125,15 @@ h2:after {
     list-style-type: none;
     display: flex;
     flex-grow: 1;
-    /* flex-shrink: 0; */
-    justify-content: space-evenly;
+    flex-shrink: 1;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid crimson; */
+    height: 5em;
+}
+
+.nav-links a {
+    flex-shrink: 0;
 }
 
 .main-nav ul li a {
@@ -129,10 +141,8 @@ h2:after {
     text-transform: uppercase;
     color: #fff;
     font-size: 80%;
-    padding: .6em 0;
+    padding: .6em .3em;
     letter-spacing: 2px;
- 
-    /* border: 1px solid crimson; */   
 }
 
 .main-nav ul li a:hover {
@@ -142,12 +152,13 @@ h2:after {
 
 .site-info{
     margin-left: 2em;
+    padding: 0 2em;
 }
 
 /* -- Buttons */
 .btn {
     display: inline-block;
-    border-radius: 200px;
+    border-radius: 5em;
     padding: 0.6em 2em;
     margin: 0 .4em;
     text-decoration: none;
@@ -179,35 +190,44 @@ h2:after {
 /* -- Section features */
 
 .section-features {
-    margin: 2em 8em;
+    margin: 2em 4em;
+    /* width: 100%;     */
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    align-items: center;
+    /* justify-content: stretch; */
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 
-.section-features p {
+.section-features .feature-description {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.feature-description p {
     margin-bottom: 2em;
 }
 
 .feature-content {
     display: flex;
-    justify-content: center;
-    flex-basis: 0  0 50%;
+    align-items: stretch;
+    flex-basis: 1  1 50%;
 }
 
-.feature-content .feature-content-card {
+.feature-content-card {
     padding: 1.5em;
     box-shadow: -5px -4px 15px rgba(0, 0, 0, 0.1);
-    margin-left: 5px;
+    margin: 0 1em;
 }
 
-.feature-content .feature-content-card i {
+.feature-content-card i {
     color:  #e67e22;
-    width: auto;
-    
+    width: 100%;
 }
 
-.feature-content .feature-content-card p {
+.feature-content-card p {
     font-size: 90%;
     line-height: 145%;    
 }
@@ -316,7 +336,7 @@ h2:after {
 .section-testimonials {
     padding: 4em 0;
     color: white;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/back-customers.jpg);
     background-size: cover;
     background-attachment: fixed;
     
@@ -380,7 +400,9 @@ h2:after {
 
 .plan-card-holder {
     display: flex;
-    width: 75%;
+    align-items: stretch;
+    width: 80%;
+    height: 100%;
     justify-content: space-between;
     margin-bottom: 4em;
 }
@@ -388,17 +410,17 @@ h2:after {
 .plan-card {
     width: 100%;
     height: 100%;
-    margin: 0 2em;
+    margin: 0 0.8em;
     padding: 1em 0;
     border-radius: 5px;
     background: #219251;
     color: white;
-    box-shadow: -5px -4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: -5px -4px 15px rgba(109, 4, 4, 0.1);
     
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
+    /* justify-content: stretch; */
+    /* align-items: stretch; */
 }
 
 .plan-price {
@@ -419,7 +441,6 @@ h2:after {
 }
 
 .plan-header, .plan-details{
-    /* padding-top: 0.6em;  */
    border-bottom: 3px solid #f4f4f4;
    margin-bottom: 1em;
 }

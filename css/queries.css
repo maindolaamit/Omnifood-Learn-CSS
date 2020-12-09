@@ -1,0 +1,222 @@
+/* Small phones */
+@media screen and (max-width:480px){
+    section { padding: 25px 0; }
+    .contact-form {width: 100%; }
+}
+
+@media screen and (max-width:590px){
+    /* 
+    --- Header Section ------
+    */
+
+    .main-nav ul li a {
+        font-size: 0.2em;
+        padding: .4em .6em;
+        font-weight: 200;
+    }
+}
+
+/* Large screen phones to Tablets */
+@media screen and (max-width:810px){
+    body { 
+        font-size: 80%; 
+    }
+    
+    .h2 {
+        /* font-size: 80%; */
+        font-weight: 200;
+    }
+
+    h2:after {
+        height: 2px;
+        margin-top: 0.3em;
+    }
+
+    h3{
+        font-size: 1.5em;
+    }
+
+    .btn {
+        padding: 0.6em 2em;
+        margin: 0.1em .4em;
+        font-size: 1.5em;
+    }
+    
+    .long-copy{
+        font-size: 1.2em;
+    }
+    
+    /* 
+    --- Header Section ------
+    */
+
+    .main-nav {
+        padding: 2em 2em;
+        margin-bottom: 3em;
+    }
+    
+    .main-nav .brand-logo{
+        flex : 1 1 30%;
+        margin: 0.8em ;
+    }
+    
+    .main-nav .logo{
+        height: 8em;
+        width: auto;
+    }
+
+    .main-nav .nav-links {
+        height: 8em;
+        font-weight: 500;
+    }
+
+    .main-nav ul li a {
+        font-size: 120%;
+        padding: .6em .3em;
+        letter-spacing: 1px;
+    }
+    
+    /* 
+    --- Features Section ------
+    */
+    .section-features {
+        margin: 1em 4em;
+        align-items: stretch;
+        justify-content: stretch;
+    }
+
+    .section-features p {
+        margin-bottom: 1em;
+        font-size: 1.4em;
+        text-align: justify;
+        /* font-weight: 400; */
+    }
+
+    .feature-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .feature-content-card {
+        padding: 1em 2em;
+        margin: 1em 0.2em;
+    }
+    
+    .feature-content-card p {
+        font-size: 1.2em;
+        font-weight: 400;
+    }
+    
+    /* 
+    --- Cities Section ------
+    */
+    
+    .section-cities {
+        display: flex;
+        flex-flow: column;
+        justify-content: stretch;
+        align-items: stretch;
+    }
+    
+    .cities-cardholder {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .city-card {
+        display: flex;
+        flex-direction: column;
+        font-weight: 500;
+        width: 90%;
+        padding: 2.5em;
+        margin-bottom: 1em;
+        box-shadow: -5px -4px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .city-features {
+        font-size: 120%;
+    }
+    
+    /* 
+    --- Testimonial Section ------
+    */
+    
+    .customer-testimonial {
+        display: flex;
+        flex-direction: column;
+        margin: 1em 2.3em;
+        border: 1px solid red;
+    }    
+
+    .customer-testimonial blockquote {
+        padding: 2em 3em;
+        font-style: italic;
+        text-align: left;
+        font-size: 1.4em;
+
+        border: 1px solid orange;
+    }
+
+    .customer-testimonial blockquote::before {
+        font-size: 400%;
+        top: -0.1em;
+        left: 0.6em;
+    }
+
+    /* 
+    --- Signup Section ------
+    */
+    .plan-card-holder {
+        /* display: flex; */
+        flex-direction: column;
+        /* align-items: stretch; */
+        /* width: 80%; */
+        /* height: 100%; */
+        /* justify-content: space-between; */
+        margin-bottom: 4em;
+    }
+    
+    .plan-header, .plan-details{
+        border-bottom: 2px solid #f4f4f4;
+        margin-bottom: 1em;
+     }
+     
+    .plan-card {
+        width: 100%;
+        margin: 1em 0.8em;
+        padding: 1em 1em;
+        font-size: 1.2em;
+        
+        display: flex;
+        flex-direction: column;
+    }
+
+    .plan-price {
+        font-weight: bold;
+    }
+
+    .plan-price span{
+        font-size: .6em;
+    }
+    
+    
+    
+}
+
+/* Big Tablets */
+@media screen and (max-width:1025px){
+    .site-header {
+        font-size: 80%;
+    }
+
+    .h2 {
+        font-size: 80%;
+        font-weight: 200;
+    }
+}
+
+/* Desktops and Large Screens */
+/* @media screen and (min-width:1100px){
+
+} */

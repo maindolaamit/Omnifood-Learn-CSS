@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Omnifood is a premium food delivery service with the mission to bring affordable and healthy meals to as many people as possible.">
     <title>Omnifood</title>
 
     <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/queries.css">
 </head>
 
 <body>
@@ -19,25 +22,29 @@
                     <img class="logo" src="img/logo-white.png">
                 </div>
                 <ul class="nav-links">
-                    <li><a href="#">food delivery</a></li>
-                    <li><a href="#">how it works</a></li>
-                    <li><a href="#">our cities</a></li>
-                    <li><a href="#">sign up</a></li>
+                    <li><a href="#section-features">food delivery</a></li>
+                    <li><a href="#section-cities">our cities</a></li>
+                    <li><a href="#section-plans">sign up</a></li>
+                    <li><a href="#section-form">Suggestions</a></li>
                 </ul>
             </nav>
             <div class="site-info">
                 <h1 class="site-title">Goodbye junk food.<br>hello super healthy meals.</h1>
                 <a href="#" class="btn btn-full">I'm hungry</a>
-                <a href="#" class="btn btn-ghost">Show me more</a>
+                <a href="#section-features" class="btn btn-ghost">Show me more</a>
             </div>
         </header>
-        <sec class="section-features">
-            <h2>Get food fast &mdash; not fast food</h2>
-            <p class="long-copy">
-                Hello, we're Omnifood, your new premium food delivery service. We know you're always busy.<br>No time
-                for
-                cooking. So let us take care of that, we're really good at it, we promise!
-            </p>
+        <sec class="section-features" id="section-features">
+            <div class="feature-hdr">
+                <h2>Get food fast &mdash; not fast food</h2>
+            </div>
+            <div class="feature-description">
+                <p class="long-copy">
+                    Hello, we're Omnifood, your new premium food delivery service. We know you're always busy. No time
+                    for
+                    cooking. So let us take care of that, we're really good at it, we promise!
+                </p>
+            </div>
             <div class="feature-content">
                 <div class="feature-content-card">
                     <i class="ion-ios-infinite-outline icon-big"></i>
@@ -67,7 +74,7 @@
             </div>
         </sec>
 
-        <sec class="section-meals">
+        <sec class="section-meals" id="section-meals">
             <ul class="meals-showcase clearfix">
                 <li>
                     <figure class="meal-photo">
@@ -115,7 +122,7 @@
             </ul>
         </sec>
 
-        <sec class="section-cities">
+        <sec class="section-cities" id="section-cities">
             <h2>We're currently in these cities</h2>
             <div class="cities-cardholder">
                 <div class="city-card">
@@ -138,7 +145,7 @@
                 </div>
                 <div class="city-card">
                     <img src="img/san-francisco.jpg" alt="San-Francisco">
-                    <h3>Lisbon</h3>
+                    <h3>San Francisco</h3>
                     <ul class="city-features">
                         <li>
                             <i class="ion-ios-person icon-small"></i>
@@ -156,7 +163,7 @@
                 </div>
                 <div class="city-card">
                     <img src="img/berlin.jpg" alt="Berlin">
-                    <h3>Lisbon</h3>
+                    <h3>Berlin</h3>
                     <ul class="city-features">
                         <li>
                             <i class="ion-ios-person icon-small"></i>
@@ -174,7 +181,7 @@
                 </div>
                 <div class="city-card">
                     <img src="img/london.jpg" alt="London">
-                    <h3>Lisbon</h3>
+                    <h3>London</h3>
                     <ul class="city-features">
                         <li>
                             <i class="ion-ios-person icon-small"></i>
@@ -192,29 +199,29 @@
                 </div>
             </div>
         </sec>
-        <sec class="section-testimonials">
+        <sec class="section-testimonials" id="section-testimonials">
             <h2>Our customers can't live without us</h2>
             <div class="customer-testimonial">
                 <blockquote>Omnifood is just awesome! I just launched a startup which leaves me with no time for
                     cooking, so Omnifood is a life-saver. Now that I got used to it, I couldn't live without my daily
                     meals!
-                    <cite><img src="img/customer-1.jpg">Martin George</cite>
+                    <cite><img src="img/customer-1.jpg" alt="Customer">Martin George</cite>
                 </blockquote>
                 <blockquote>
                     Inexpensive, healthy and great-tasting meals, delivered right to my home. We have lots of food
                     delivery here in Lisbon, but no one comes even close to Omifood. Me and my family are so in love!
-                    <cite><img src="img/customer-2.jpg">Drew Symond</cite>
+                    <cite><img src="img/customer-2.jpg" alt="Customer">Drew Symond</cite>
                 </blockquote>
                 <blockquote>
                     I was looking for a quick and easy food delivery service in San Franciso. I tried a lot of them and
                     ended up with Omnifood. Best food delivery service in the Bay Area. Keep up the great
                     work!
-                    <cite><img src="img/customer-3.jpg">Barry Hill</cite>
+                    <cite><img src="img/customer-3.jpg" alt="Customer">Barry Hill</cite>
                 </blockquote>
             </div>
         </sec>
 
-        <sec class="section-plans">
+        <sec class="section-plans" id="section-plans">
             <h2>Start eating healthy today</h2>
             <div class="plan-card-holder">
                 <div class="plan-card">
@@ -232,7 +239,7 @@
                         </ul>
                     </div>
                     <div class="plan-signup">
-                        <a href="" class="btn btn-full">Sign up now</a>
+                        <a href="" class="btn btn-ghost">Sign up now</a>
                     </div>
                 </div>
                 <div class="plan-card">
@@ -249,7 +256,7 @@
                             <li><i class="ion-ios-checkmark-empty icon-small"></i>Free delivery</li>
                         </ul>
                     </div>
-                    <div class="plan-signup"><a href="" class="btn btn-ghost">Sign up now</a></div>
+                    <div class="plan-signup"><a href="" class="btn btn-full">Sign up now</a></div>
                 </div>
                 <div class="plan-card">
                     <div class="plan-header">
@@ -269,7 +276,7 @@
                 </div>
             </div>
         </sec>
-        <sec class="section-form">
+        <sec class="section-form" id="section-form">
             <h2>We're happy to hear from you</h2>
             <form action="#" class="contact-form" method="post">
                 <div class="form-row">
@@ -325,9 +332,11 @@
             </div>
             <div class="footer-content">
                 <p>
-                    This webpage was created based on the course "Design and Develop a Killer Website Using HTML5 and CSS3"
+                    This webpage was created based on the course "Design and Develop a Killer Website Using HTML5 and
+                    CSS3"
                     by Jonas Schmedtmann.<br>
-                    Contrary to Original course I have used CSS Flexbox to align content and achive same Look and Feel.<br>Happy Learning !!!.
+                    Contrary to Original course I have used CSS Flexbox to align content and achive same Look and
+                    Feel.<br>Happy Learning !!!.
                 </p>
                 <p>
                     Build with <i class="ion-ios-heart" style="color: #ea0000; padding: 0 3px;"></i> in the beautiful
